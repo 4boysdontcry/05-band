@@ -4,14 +4,14 @@
 
 
 /******************** default *********************/
-html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -1px; color: #121212;}
+html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -.5px; color: #121212;}
 .wrapper {max-width: 800px; padding: 0 16px; margin: auto;}
 
 
 
 
 /******************** header *********************/
-.header-wrapper {position: fixed; width: 100%; background-color: #121212; color: #f9f9f9;}
+.header-wrapper {position: fixed; width: 100%; background-color: #121212; color: #f9f9f9; z-index: 9;}
 .header-wrapper > .navi-wrapper {float: left;}
 .header-wrapper > .navi-wrapper > .navi {float: left;}
 .header-wrapper > .navi-wrapper > .navi > a {padding: 1em 1.25em;}
@@ -33,7 +33,14 @@ html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -1px;
 
 
 /******************** main *********************/
-
+.main-wrapper {position: relative; padding-top: 48px;}
+.main-wrapper > .bt-swiper {color: #f9f9f9; font-weight: lighter; font-size: 5em; position: absolute; top: 50%; transform: translateY(-50%);
+    z-index: 5; cursor: pointer; user-select: none; outline: none;}
+.main-wrapper > .bt-swiper.bt-prev {left: 16px;}
+.main-wrapper > .bt-swiper.bt-next {right: 16px;}
+.main-wrapper .slogan-wrap {position: absolute; color: #f9f9f9; left: 50%; transform: translateX(-50%); bottom: 40px; text-align: center;}
+.main-wrapper .slogan-wrap > .title {font-size: 1.5em; margin-bottom: .75em;}
+.main-wrapper .slogan-wrap > .content {font-weight: bold;}
 
 
 /******************** band *********************/
@@ -74,7 +81,7 @@ html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -1px;
     .header-wrapper > .bars-wrapper {display: block;}
     .header-wrapper > .monavi-wrapper {display: none;}
     .header-wrapper > .monavi-wrapper.active {display: block;}
-    
+    .main-wrapper .slogan-wrap {display: none;}
 }
 
 @media (max-width: 576px) {
