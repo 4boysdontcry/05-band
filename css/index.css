@@ -5,8 +5,10 @@
 
 /******************** default *********************/
 html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -.5px; color: #121212;}
-.wrapper {max-width: 800px; padding: 0 16px; margin: auto;}
-
+.wrapper {max-width: 800px; padding: 5em 1em; margin: auto;}
+.wrapper > .title {text-align: center;}
+.wrapper > h2.title {font-size: 1.625em; letter-spacing: 5px; margin-bottom: 1em;}
+.wrapper > h3.title {font-style: italic; color: #aaa; margin-bottom: 1.75em;}
 
 
 
@@ -35,7 +37,8 @@ html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -.5px
 /******************** main *********************/
 .main-wrapper {position: relative; padding-top: 48px;}
 .main-wrapper > .bt-swiper {color: #f9f9f9; font-weight: lighter; font-size: 5em; position: absolute; top: 50%; transform: translateY(-50%);
-    z-index: 5; cursor: pointer; user-select: none; outline: none;}
+    z-index: 5; cursor: pointer; user-select: none; outline: none; transition: all .5s; opacity: .2;}
+.main-wrapper > .bt-swiper:hover {opacity: 1;}
 .main-wrapper > .bt-swiper.bt-prev {left: 16px;}
 .main-wrapper > .bt-swiper.bt-next {right: 16px;}
 .main-wrapper .slogan-wrap {position: absolute; color: #f9f9f9; left: 50%; transform: translateX(-50%); bottom: 40px; text-align: center;}
@@ -44,12 +47,34 @@ html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -.5px
 
 
 /******************** band *********************/
-
+.band-wrapper > .wrapper > .comment {line-height: 1.5; text-align: justify;}
+.band-wrapper > .wrapper > .member-wrap > .member {width: 33.3333%; float: left; padding: 6%; text-align: center;}
+.band-wrapper > .wrapper > .member-wrap > .member > .name {margin-bottom: 1.25em;}
+.band-wrapper > .wrapper > .member-wrap > .member > img {border-radius: 4px;}
 
 
 /******************** tour *********************/
+.tour-wrapper {background-color: #121212;}
+.tour-wrapper > .wrapper > h2.title {color: #f9f9f9;}
+.tour-wrapper > .wrapper > .ticket-wrap {background-color: #f9f9f9; color: #555; margin-bottom: 2em;}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket {padding: .5em;}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket:not(:last-child) {border-bottom: 1px solid #ccc;}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket > span {float: left; padding: .325em;}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket > span.soldout {background-color: #f32; color: #f9f9f9; margin-left: 1em;}
+.tour-wrapper > .wrapper > .ticket-wrap > .ticket > span.cnt {float: right; background-color: #121212; color: #f9f9f9;
+    border-radius: 50%; margin-right: 2em; padding: .325em .625em;} 
 
-
+.tour-wrapper > .wrapper > .city-wrap {width: 102%;}
+.tour-wrapper > .wrapper > .city-wrap > .city {float: left; width: 31.3333%; margin-right: 2%;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap {}
+.tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap > img {transition: all .5s;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .img-wrap:hover > img {opacity: .7;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap {background-color: #f9f9f9; padding: 1em;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .name {font-weight: bold; color: #000; margin-bottom: 1em;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .date {color: #777; margin-bottom: 1em;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .comment {line-height: 1.25; margin-bottom: 1em;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .bt-buy {padding: .625em .875em; transition: all .35s; background-color: #121212; color: #f9f9f9;}
+.tour-wrapper > .wrapper > .city-wrap > .city > .cont-wrap > .bt-buy:hover {background-color: #ccc; color: #121212;}
 
 /******************** contact *********************/
 
@@ -81,11 +106,14 @@ html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -.5px
     .header-wrapper > .bars-wrapper {display: block;}
     .header-wrapper > .monavi-wrapper {display: none;}
     .header-wrapper > .monavi-wrapper.active {display: block;}
-    .main-wrapper .slogan-wrap {display: none;}
+    .main-wrapper > .bt-swiper {font-size: 3em;}
 }
 
 @media (max-width: 576px) {
-
+    .band-wrapper > .wrapper > .comment {margin-bottom: 3em;}
+    .band-wrapper > .wrapper > .member-wrap > .member {width: 100%;  padding: 5% 20%;}
+    .tour-wrapper > .wrapper > .city-wrap {width: 100%;}
+    .tour-wrapper > .wrapper > .city-wrap > .city {width: 100%; margin-right: 0%; margin-bottom: 5%;}
 }
 
 
