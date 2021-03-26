@@ -4,7 +4,7 @@
 
 
 /******************** default *********************/
-html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -.5px; color: #121212;}
+html, body {font: 16px 'lato', sans-serif; letter-spacing: -.5px; color: #121212;}
 .wrapper {max-width: 800px; padding: 5em 1em; margin: auto;}
 .wrapper > .title {text-align: center;}
 .wrapper > h2.title {font-size: 1.625em; letter-spacing: 5px; margin-bottom: 1em;}
@@ -116,7 +116,6 @@ html, body {font: 16px 'lato', sans-serif; height: 5000px; letter-spacing: -.5px
 .modal-wrapper > .modal-wrap > .modal-header > .bt-close {position: absolute; top: 0; right: 0; padding: .75em 1em; font-size: 1.125em; color: #f9f9f9; }
 .modal-wrapper > .modal-wrap > .modal-header > .bt-close:hover {background-color: #013b36;}
 .modal-wrapper > .modal-wrap > .modal-body {padding: 1em;}
-.modal-wrapper > .modal-wrap > .modal-body > form {}
 .modal-wrapper > .modal-wrap > .modal-body > form > * {width: 100%;}
 .modal-wrapper > .modal-wrap > .modal-body > form > label {margin-bottom: 1em;}
 .modal-wrapper > .modal-wrap > .modal-body > form > input {margin-bottom:1.25em; padding: .75em; border: 1px solid #ccc;}
