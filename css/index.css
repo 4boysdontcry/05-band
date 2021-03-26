@@ -9,7 +9,7 @@ html, body {font: 16px 'lato', sans-serif; letter-spacing: -.5px; color: #121212
 .wrapper > .title {text-align: center;}
 .wrapper > h2.title {font-size: 1.625em; letter-spacing: 5px; margin-bottom: 1em;}
 .wrapper > h3.title {font-style: italic; color: #aaa; margin-bottom: 1.75em;}
-
+a.anchor {height: 0; line-height: 0; display: inline;}
 
 
 /******************** header *********************/
