@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=71be89f4c8c605194c1e47132ee7cef3"></script>
 </head>
 
 <body>
@@ -171,24 +172,45 @@
         <div class="wrapper">
             <h2 class="title">CONTACT</h2>
             <h3 class="title">Fan? Drop a note!</h3>
+            <div class="contact-wrap clearfix">
+                <ul class="info-wrap">
+                    <li class="address"><i class="fa fa-map-marker-alt"></i> Chicago, US</li>
+                    <li class="phone"><i class="fa fa-phone-alt"></i> Phone: +00 151515</li>
+                    <li class="email"><i class="fa fa-envelope"></i> Email: mail@mail.com</li>
+                </ul>
+                <form class="contact-form clearfix">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="msg" placeholder="Message">
+                    <button class="bt-send">SEND</button>
+                </form>
+            </div>
         </div>
+        <div class="map-wrap" id="map"></div>
         <!--todo: 카카오지도 넣을것 -->
-        <img src="../img/map.jpg" alt="지도" class="img">
     </section>
 
 
     <!-- footer-wrapper -->
     <footer class="footer-wrapper">
-
+        <ul class="sns-wrap">
+            <li class="sns"><a href="#" class="fab fa-facebook"></a></li>
+            <li class="sns"><a href="#" class="fab fa-instagram"></a></li>
+            <li class="sns"><a href="#" class="fab fa-snapchat"></a></li>
+            <li class="sns"><a href="#" class="fab fa-pinterest-p"></a></li>
+            <li class="sns"><a href="#" class="fab fa-twitter"></a></li>
+            <li class="sns"><a href="#" class="fab fa-linkedin-in"></a></li>
+        </ul>
+        <div class="copyright">Powered by <a href="#">w3.css</a></div>
     </footer>
 
     <!-- modal-wrapper -->
     <div class="modal-wrapper">
         <div class="modal-wrap">
-            <h2 class="modal-header">
+            <div class="modal-header">
                 <h2 class="title"><i class="fa fa-suitcase"></i>Tickets</h2>
                 <button class="bt-close"><i class="fa fa-times"></i></button>
-            </h2>
+            </div>
             <div class="modal-body">
                 <form action="#">
                     <label for="ticketPerson"><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label>
@@ -198,7 +220,7 @@
                     <button class="bt-send">PAY <i class="fa fa-check"></i></button>
                 </form>
             </div>
-            <div class="madal-footer">
+            <div class="modal-footer clearfix">
                 <button class="bt-close">Close <i class="fa fa-times"></i></button>
                 <div class="help">
                     Need <a href="#">help?</a>
